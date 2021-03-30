@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".MainActivity">
+
+        <TextView
+            android:id="@+id/ttl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello Mr.Head"
+            android:textColor="#FF1515"
+            android:textSize="36sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <FrameLayout
+            android:id="@+id/frameLayout"
+            android:layout_width="407dp"
+            android:layout_height="326dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ttl">
+
+
+            <ImageView
+                android:id="@+id/img_head"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="invisible"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <ImageView
+                android:id="@+id/img_hair"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <ImageView
+                android:id="@+id/img_eyes"
+                android:layout_width="409dp"
+                android:layout_height="70dp"
+                android:layout_gravity="center"
+                android:visibility="invisible"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <ImageView
+                android:id="@+id/img_beard"
+                android:layout_width="match_parent"
+                android:layout_height="109dp"
+                android:layout_gravity="bottom"
+                android:visibility="invisible"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <ImageView
+                android:id="@+id/img_eyebrow"
+                android:layout_width="match_parent"
+                android:layout_height="115dp"
+                android:paddingTop="85dp"
+                android:visibility="invisible"
+                android:src="@drawable/ic_launcher_foreground" />
+
+            <ImageView
+                android:id="@+id/img_moustache"
+                android:layout_width="match_parent"
+                android:layout_height="237dp"
+                android:paddingTop="200dp"
+                android:visibility="invisible"
+                android:src="@drawable/ic_launcher_foreground" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tv_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="HEAD"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_head"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <Button
+            android:id="@+id/btn_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            app:layout_constraintEnd_toEndOf="@+id/frameLayout"
+            app:layout_constraintTop_toBottomOf="@+id/frameLayout" />
+
+        <TextView
+            android:id="@+id/tv_hair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="HAIR"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_hair"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_head" />
+
+        <Button
+            android:id="@+id/btn_hair"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            app:layout_constraintEnd_toEndOf="@+id/btn_head"
+            app:layout_constraintTop_toBottomOf="@+id/btn_head" />
+
+        <TextView
+            android:id="@+id/tv_moustache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="MOUSTACHE"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_hair"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_hair" />
+
+        <Button
+            android:id="@+id/btn_moustache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            app:layout_constraintEnd_toEndOf="@+id/btn_hair"
+            app:layout_constraintTop_toBottomOf="@+id/btn_hair" />
+
+        <TextView
+            android:id="@+id/tv_eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="EYES"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_hair"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_moustache" />
+
+        <Button
+            android:id="@+id/btn_eyes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            app:layout_constraintEnd_toEndOf="@+id/btn_moustache"
+            app:layout_constraintTop_toBottomOf="@+id/btn_moustache" />
+
+        <TextView
+            android:id="@+id/tv_eyebrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="EYEBROW"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_eyebrow"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_eyes" />
+
+        <Button
+            android:id="@+id/btn_eyebrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            app:layout_constraintEnd_toEndOf="@+id/btn_eyes"
+            app:layout_constraintTop_toBottomOf="@+id/btn_eyes" />
+
+        <TextView
+            android:id="@+id/tv_beard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:text="BEARD"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_beard"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_eyebrow" />
+
+        <Button
+            android:id="@+id/btn_beard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Browse"
+            app:layout_constraintEnd_toEndOf="@+id/btn_eyebrow"
+            app:layout_constraintTop_toBottomOf="@+id/btn_eyebrow" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
